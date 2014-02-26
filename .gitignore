@@ -1,6 +1,22 @@
-*.class
+# Eclipse
+.classpath
+.factorypath
+.project
+.settings/
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# NetBeans
+core
+nbproject/
+nb-configuration
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
