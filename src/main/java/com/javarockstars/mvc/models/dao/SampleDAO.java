@@ -1,6 +1,7 @@
 package com.javarockstars.mvc.models.dao;
 
 import com.javarockstars.mvc.models.entities.SampleModel;
+import com.javarockstars.mvc.models.entities.Season;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Repository;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Andrej Galad on 29.4.2014.
@@ -31,5 +33,10 @@ public class SampleDAO {
                 return model;
             }
         });
+    }
+
+    public List<Map<String, Object>> findAllSampleModelsGeneric() {
+        String sql = "select * from sample_model";
+        return jdbcTemplate.queryForList(sql);
     }
 }

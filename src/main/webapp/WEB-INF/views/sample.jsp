@@ -5,15 +5,23 @@
     <h1>Sample Models</h1>
 
     <c:if test="${not empty samples}">
-        <ul>
-            <c:forEach var="sample" items="${samples}">
-                <li>
-                    <div>${sample.firstName}</div>
-                    <div>${sample.lastName}</div>
-                    <div>${sample.phoneNumber}</div>
-                </li>
+        <table>
+            <c:set var="first" value="${samples[0]}" />
+
+            <c:forEach var="element" items="${first}">
+                <th>${element.key}</th>
             </c:forEach>
-        </ul>
+
+            <c:forEach var="row" items="${samples}">
+                <tr>
+                    <c:forEach var="element" items="${row}">
+                        <td>
+                            <div>${element.value}</div>
+                        </td>
+                    </c:forEach>
+                </tr>
+            </c:forEach>
+        </table>
     </c:if>
 
 </body>
