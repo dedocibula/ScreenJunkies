@@ -9,18 +9,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/sample")
 public class SampleController {
 
     @Autowired
     private SampleDAO sampleDAO;
 
     @RequestMapping(method = RequestMethod.GET)
-	public ModelAndView index() {
-		return new ModelAndView("index", "message", "Hello World!");
-	}
-
-    @RequestMapping(value = "sample", method = RequestMethod.GET)
     public ModelAndView getSamples() {
         return new ModelAndView("sample", "samples", sampleDAO.findAllSampleModels());
     }
