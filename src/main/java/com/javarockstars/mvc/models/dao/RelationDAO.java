@@ -2,8 +2,8 @@ package com.javarockstars.mvc.models.dao;
 
 import com.javarockstars.mvc.models.entities.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
@@ -17,7 +17,7 @@ import java.util.List;
 public class RelationDAO {
 
     @Autowired
-    private NamedParameterJdbcTemplate jdbcTemplate;
+    private JdbcTemplate jdbcTemplate;
 
     public List<Performer> findPerformers() {
         String sql = "select * from performer limit 20";

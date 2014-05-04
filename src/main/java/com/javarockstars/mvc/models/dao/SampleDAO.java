@@ -2,8 +2,8 @@ package com.javarockstars.mvc.models.dao;
 
 import com.javarockstars.mvc.models.entities.SampleModel;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
@@ -17,7 +17,7 @@ import java.util.List;
 public class SampleDAO {
 
     @Autowired
-    private NamedParameterJdbcTemplate jdbcTemplate;
+    private JdbcTemplate jdbcTemplate;
 
     public List<SampleModel> findAllSampleModels() {
         String sql = "select * from sample_model";
