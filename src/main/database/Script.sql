@@ -27,11 +27,6 @@ content varchar);
 create table genre	
 (genre varchar primary key);
 
-create table belongtoGenre	
-(vid int references videoinfo (vid),	
-genre varchar references genre (genre), 	
-primary key(vid, genre));
-
 create table videoinfo	
 (vid int primary key,	
 title varchar,	
@@ -82,13 +77,6 @@ create table collection
 (collection_id int primary key references videoinfo(vid),	
 collection_name varchar);	
 
-Create table inseason	
-(tvid int references tvepisodeinfo (tvid),	
-seasontitle varchar,	
-seasonNum int,	
-foreign key (seasontitle, seasonNum) references season(seasontitle, seasonNum),	
-primary key (tvid, seasontitle, seasonNum));
-
 create table season	
 (seasontitle varchar,	
 seasonNum int,	
@@ -110,3 +98,16 @@ create table tvepisodedirectors
 (did int references director(did),	
 tvid int references tvepisodeinfo(tvid),	
 primary key(did, tvid));
+
+create table belongtoGenre	
+(vid int references videoinfo (vid),	
+genre varchar references genre (genre), 	
+primary key (vid, genre));	
+
+Create table inseason	
+(tvid int references tvepisodeinfo (tvid),	
+seasontitle varchar,	
+seasonNum int,	
+foreign key (seasontitle, seasonNum) references season(seasontitle, 
+seasonNum),	
+primary key (tvid, seasontitle, seasonNum));
