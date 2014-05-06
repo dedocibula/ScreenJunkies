@@ -9,73 +9,41 @@
         
         </head>
 
- 
-    <body> <!-- Will use "body" styles in css file -->
-        
- 
-            <header> <!-- New HTML5 tag, uses 'header' styles in css file -->
+<body>
+    		<header>
               <table style="width: 98%">
                 <tr>
-              <td align="right"><font color="#F8F8F8" size="6">Screen Junkies</font><br></td>
+              <td align="right"><span style="color: #F8F8F8; font-size: x-large; ">Screen Junkies</span><br></td>
               <td align="center">
-                    <form action="j_security_check" method=post>
-                        <p> <font color="F8F8F8" size="2">Enter Query Here:</font>
-                        <input type="text" name="j_username" size="25">
+                      <form action="/query" method=post>
+                        <p> <span style="font-size: x-small; ">Enter Query Here:</span>
+                        <input type="text" name="sql" size="25">
                         <input type="reset" value="Clear">
                         <input type="submit" value="Submit">
                     </form>
+
               </td>
-              <td align="right"><font color="#F8F8F8">Mohammed Tanvir | Dev Mehta | Andrej Galad</font></td>
+              <td align="right"><span style="color: #F8F8F8; "> Mohammed Tanvir | Dev Mehta | Andrej Galad</span></td>
             </tr>
             </table>
-            </header> <!-- Header -->
- 
-            <nav> <!-- New HTML5 tag, uses 'nav' styles in css file -->
+            </header>
+            <nav> 
               <div class="menu">
-                    <ul><a href="homepage.html" style="text-decoration: none">Home</a></ul>
-                    <ul><a href="movies.html" style="text-decoration: none">Movies</a></ul>
-                    
-                    <ul><a href="directors.html" style="text-decoration: none">Directors</a></ul>                    
-                    <ul><a href="performers.html" style="text-decoration: none">Performers</a></ul> 
-					<ul><a href="collections.html" style="text-decoration: none">Collections</a></ul> 
-					<ul><a href="seasons.html" style="text-decoration: none">Seasons</a></ul> 
-                    
-                    <ul><a href="tvshows.html" style="text-decoration: none">TV Shows</a></ul>
-                    <ul><a href="friends.html" style="text-decoration: none">Friends</a></ul>
-                    <ul><a href="userprofile.html" style="text-decoration: none">User Profile</a></ul>
-                    
-                    <ul><a href="login.html" style="text-decoration: none">Log in</a></ul>        
-                    <ul><a href="createaccount.html" style="text-decoration: none">Create Account</a></ul>                   
-
+                    <ul><a href="" style="text-decoration: none">Home</a></ul>
+                    <ul><a href="query/one" style="text-decoration: none">Query1</a></ul>
+                    <ul><a href="query/two" style="text-decoration: none">Query2</a></ul>
+                    <ul><a href="query/three" style="text-decoration: none">Query3</a></ul>
+                    <ul><a href="query/four" style="text-decoration: none">Query4</a></ul>
+                    <ul><a href="query/five" style="text-decoration: none">Query5</a></ul>
+                    <ul><a href="relation/certificates" style="text-decoration: none">Certificates</a></ul>
+                    <ul><a href="relation/directors" style="text-decoration: none">Directors</a></ul>
+                    <ul><a href="relation/performers" style="text-decoration: none">Performers</a></ul>
+                    <ul><a href="relation/seasons" style="text-decoration: none">Seasons</a></ul>
+                    <ul><a href="relation/users" style="text-decoration: none">Users</a></ul>
+                                        
               </div>
             </nav> <!-- Navigation Bar -->
- 
-            <div id="content" style="padding-left:5%; background-image: url(/Users/Tanvir/Desktop/CS4604/project/ScreenJunkies/src/main/resources/movie.jpeg);"> <!-- Will use "content" 
-
-style="background-image: url(../images/test-background.gif);
-                styles in css file -->
-            
-            <!--
-                <table border="1" style="background-color:white;border:1px dotted black;width:80%;border-collapse:collapse;">
-                <tr style="background-color:white;color:black;">
-                <th style="padding:3px;">Table header</th><th style="padding:3px;">Table header</th>
-                </tr>
-                <tr>
-                <td style="padding:3px;">Table cell 1</td><td style="padding:3px;">Table cell 2</td>
-                </tr>
-                <tr>
-                <td style="padding:3px;">Table cell 3</td><td style="padding:3px;">Table cell 4</td>
-                </tr>
-                </table>
-
-            -->
-
-
-           <!--  <img src="movie.jpeg" alt="some_text"> -->
-
-
-            </div> <!-- Content -->
-
-       
-    </body>
+            <div id="content" style="padding-left:5%; background-image: url(../src/main/resources/movie.jpeg);">
+            </div>
+</body>
 </html>
