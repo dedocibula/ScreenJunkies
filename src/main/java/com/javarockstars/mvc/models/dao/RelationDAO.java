@@ -73,7 +73,7 @@ public class RelationDAO {
             @Override
             public Certificate mapRow(ResultSet resultSet, int i) throws SQLException {
                 Certificate certificate = new Certificate();
-                certificate.setCertificationName(resultSet.getString("certification_name"));
+                certificate.setName(resultSet.getString("certification_name"));
                 certificate.setContent(resultSet.getString("content"));
                 return certificate;
             }

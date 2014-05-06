@@ -5,15 +5,15 @@ package com.javarockstars.mvc.models.entities;
  */
 public class Certificate {
 
-    private String certificationName;
+    private String name;
     private String content;
 
-    public String getCertificationName() {
-        return certificationName;
+    public String getName() {
+        return name;
     }
 
-    public void setCertificationName(String certificationName) {
-        this.certificationName = certificationName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getContent() {

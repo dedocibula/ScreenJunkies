@@ -87,8 +87,8 @@ public class QueryDAO {
         String sql = "select rate_score from " +
                      "(select rate_score, count(rate_score) as count " +
                      "from ratings " +
-                     "group by rate_score" +
-                     "order by count desc) " +
+                     "group by rate_score " +
+                     "order by count desc) as temp " +
                      "limit 1";
 
         return jdbcTemplate.queryForList(sql);
