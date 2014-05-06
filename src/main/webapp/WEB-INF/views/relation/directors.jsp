@@ -30,20 +30,17 @@
  
             <nav> <!-- New HTML5 tag, uses 'nav' styles in css file -->
               <div class="menu">
-                    <ul><a href="homepage.html" style="text-decoration: none">Home</a></ul>
-                    <ul><a href="movies.html" style="text-decoration: none">Movies</a></ul>
-                    
-                    <ul><a href="directors.html" style="text-decoration: none">Directors</a></ul>                    
-                    <ul><a href="performers.html" style="text-decoration: none">Performers</a></ul> 
-					<ul><a href="collections.html" style="text-decoration: none">Collections</a></ul> 
-					<ul><a href="seasons.html" style="text-decoration: none">Seasons</a></ul> 
-                    
-                    <ul><a href="tvshows.html" style="text-decoration: none">TV Shows</a></ul>
-                    <ul><a href="friends.html" style="text-decoration: none">Friends</a></ul>
-                    <ul><a href="userprofile.html" style="text-decoration: none">User Profile</a></ul>
-                    
-                    <ul><a href="login.html" style="text-decoration: none">Log in</a></ul>        
-                    <ul><a href="createaccount.html" style="text-decoration: none">Create Account</a></ul>                   
+                     <ul><a href="/ScreenJunkies/" style="text-decoration: none">Home</a></ul>
+                    <ul><a href="/ScreenJunkies/query/one" style="text-decoration: none">Query1</a></ul>
+                    <ul><a href="/ScreenJunkies/query/two" style="text-decoration: none">Query2</a></ul>
+                    <ul><a href="/ScreenJunkies/query/three" style="text-decoration: none">Query3</a></ul>
+                    <ul><a href="/ScreenJunkies/query/four" style="text-decoration: none">Query4</a></ul>
+                    <ul><a href="/ScreenJunkies/query/five" style="text-decoration: none">Query5</a></ul>
+                    <ul><a href="certificates" style="text-decoration: none">Certificates</a></ul>
+                    <ul><a href="directors" style="text-decoration: none">Directors</a></ul>
+                    <ul><a href="performers" style="text-decoration: none">Performers</a></ul>
+                    <ul><a href="seasons" style="text-decoration: none">Seasons</a></ul>
+                    <ul><a href="users" style="text-decoration: none">Users</a></ul>                   
 
               </div>
             </nav> <!-- Navigation Bar -->

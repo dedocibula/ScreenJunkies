@@ -34,7 +34,13 @@
                     <ul><a href="query/two" style="text-decoration: none">Query2</a></ul>
                     <ul><a href="query/three" style="text-decoration: none">Query3</a></ul>
                     <ul><a href="query/four" style="text-decoration: none">Query4</a></ul>
-                    <ul><a href="query/five" style="text-decoration: none">Query5</a></ul>                    
+                    <ul><a href="query/five" style="text-decoration: none">Query5</a></ul>
+                    <ul><a href="relation/certificates" style="text-decoration: none">Certificates</a></ul>
+                    <ul><a href="relation/directors" style="text-decoration: none">Directors</a></ul>
+                    <ul><a href="relation/performers" style="text-decoration: none">Performers</a></ul>
+                    <ul><a href="relation/seasons" style="text-decoration: none">Seasons</a></ul>
+                    <ul><a href="relation/users" style="text-decoration: none">Users</a></ul>
+                                        
               </div>
             </nav> <!-- Navigation Bar -->
             <div id="content" style="padding-left:5%; background-image: url(../src/main/resources/movie.jpeg);">
