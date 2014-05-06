@@ -9,16 +9,16 @@
     		<header>
               <table style="width: 98%">
                 <tr>
-              <td align="right"><font size="6">Screen Junkies</font><br></td>
+              <td align="right"><span style="font-size: x-large; ">Screen Junkies</span><br></td>
               <td align="center">
-                    <form action="j_security_check" method=post>
-                        <p> <font size="2">Enter Query Here:</font>
-                        <input type="text" name="j_username" size="25">
+                    <form action="/query" method=post>
+                        <p> <span style="font-size: x-small; ">Enter Query Here:</span>
+                        <input type="text" name="sql" size="25">
                         <input type="reset" value="Clear">
                         <input type="submit" value="Submit">
                     </form>
               </td>
-              <td align="right"><font> Mohammed Tanvir | Dev Mehta | Andrej Galad</font></td>
+              <td align="right"> Mohammed Tanvir | Dev Mehta | Andrej Galad</td>
             </tr>
             </table>
             </header>

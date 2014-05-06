@@ -64,10 +64,14 @@ public class QueryDAO {
      * @return user id, number of user's friends
      */
     public List<Map<String, Object>> findUserWithMostFriends() {
-        String sql = "create view user_total_friends as " +
-                     "select uid1 as uid, count(distinct uid2) as friend_num " +
-                     "from friends " +
-                     "group by uid1;";
+        String sql = "drop view user_total_friends;";
+
+        jdbcTemplate.execute(sql);
+
+        sql = "create view user_total_friends as " +
+              "select uid1 as uid, count(distinct uid2) as friend_num " +
+              "from friends " +
+              "group by uid1;";
 
         jdbcTemplate.execute(sql);
 
