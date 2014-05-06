@@ -13,7 +13,7 @@
     		<header>
               <table style="width: 98%">
                 <tr>
-              <td align="right"><font color="#F8F8F8" size="6">Screen Junkies</font><br></td>
+              <td align="right"><span style="color: #F8F8F8; font-size: x-large; ">Screen Junkies</span><br></td>
               <td align="center">
                       <form action="/query" method=post>
                         <p> <span style="font-size: x-small; ">Enter Query Here:</span>
@@ -23,7 +23,7 @@
                     </form>
 
               </td>
-              <td align="right"><font color="#F8F8F8"> Mohammed Tanvir | Dev Mehta | Andrej Galad</font></td>
+              <td align="right"><span style="color: #F8F8F8; "> Mohammed Tanvir | Dev Mehta | Andrej Galad</span></td>
             </tr>
             </table>
             </header>
