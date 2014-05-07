@@ -7,7 +7,7 @@
 <%@ include file="layout.jsp" %>
 
 <div id="content">
-    <img src="<c:url value="/images/movie.jpeg" />" />
+    <img style="width: 110%" src="<c:url value="/images/movie.jpeg"/>" />
 </div>
 
 </body>

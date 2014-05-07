@@ -74,3 +74,8 @@ footer { /* Will style the "footer" tag in html file */
     background:#333;
     color:#fff;
 }
+
+#superForm {
+    margin: 0;
+    height: 80px;
+}

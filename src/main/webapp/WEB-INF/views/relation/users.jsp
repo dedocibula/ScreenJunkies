@@ -25,7 +25,7 @@
                 <th>Location</th>
             </tr>
             <c:forEach var="user" items="${users}">
-                <tr>
+                <tr align="center">
                     <td>${user.id}</td>
                     <td>${user.firstName}</td>
                     <td>${user.lastName}</td>

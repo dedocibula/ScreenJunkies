@@ -28,4 +28,11 @@ public class RestClientTest {
         Assert.assertNotNull(boxOfficeMovies);
         Assert.assertTrue(!boxOfficeMovies.isEmpty());
     }
+
+    @Test
+    public void getUpcomingMoviesTest() {
+        List<Movie> boxOfficeMovies = restClient.getUpcomingMovies();
+        Assert.assertNotNull(boxOfficeMovies);
+        Assert.assertTrue(!boxOfficeMovies.isEmpty());
+    }
 }

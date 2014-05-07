@@ -40,20 +40,13 @@
 
 <div id="nav"> <!-- New HTML5 tag, uses 'nav' styles in css file -->
     <div class="menu">
-        <ul><a href="homepage.html" style="text-decoration: none">Home</a></ul>
-        <ul><a href="movies.html" style="text-decoration: none">Movies</a></ul>
 
-        <ul><a href="directors.html" style="text-decoration: none">Directors</a></ul>
-        <ul><a href="performers.html" style="text-decoration: none">Performers</a></ul>
-        <ul><a href="collections.html" style="text-decoration: none">Collections</a></ul>
-        <ul><a href="seasons.html" style="text-decoration: none">Seasons</a></ul>
-
-        <ul><a href="tvshows.html" style="text-decoration: none">TV Shows</a></ul>
-        <ul><a href="friends.html" style="text-decoration: none">Friends</a></ul>
-        <ul><a href="userprofile.html" style="text-decoration: none">User Profile</a></ul>
-
-        <ul><a href="login.html" style="text-decoration: none">Log in</a></ul>
-        <ul><a href="createaccount.html" style="text-decoration: none">Create Account</a></ul>
+        <ul><a href="/rotten/boxOffice" style="text-decoration: none">Blockbusters</a></ul>
+        <ul><a href="/rotten/inTheaters" style="text-decoration: none">In Theaters</a></ul>
+        <ul><a href="/rotten/upcomingMovies" style="text-decoration: none">Upcoming Movies</a></ul>
+        <ul><a href="/rotten/topRentals" style="text-decoration: none">Top Rentals</a></ul>
+        <ul><a href="/rotten/currentReleases" style="text-decoration: none">Current Release DVDs</a></ul>
+        <ul><a href="/rotten/upcomingDvds" style="text-decoration: none">Upcoming DVDs</a></ul>
 
     </div>
 </div> <!-- Navigation Bar -->

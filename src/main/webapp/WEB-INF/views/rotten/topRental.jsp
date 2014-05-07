@@ -14,8 +14,8 @@
 
     <div id="content">
 
-        <h1 style="text-align:center;">Latest Blockbusters</h1>
-        <h3 style="text-align:center;">This page shows the hottest Hollywood box office movies.</h3>
+        <h1 style="text-align:center;">Top Rental DVDs</h1>
+        <h3 style="text-align:center;">This page shows the most wanted DVDs.</h3>
         <table border="1" style="margin:auto;">
             <tr>
                 <th></th>

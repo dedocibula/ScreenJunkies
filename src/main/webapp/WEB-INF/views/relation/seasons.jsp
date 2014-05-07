@@ -18,7 +18,7 @@
             <th>Number</th>
         </tr>
         <c:forEach var="season" items="${seasons}">
-            <tr>
+            <tr align="center">
                 <td>${season.title}</td>
                 <td>${season.number}</td>
             </tr>
