@@ -10,6 +10,7 @@
     <properties>
         <spring.version>4.0.3.RELEASE</spring.version>
         <jstl.version>1.2</jstl.version>
+        <jersey.version>1.18.1</jersey.version>
     </properties>
 
     <dependencies>
@@ -67,6 +68,24 @@
             <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
             <version>${jstl.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>${jersey.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.3.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-json</artifactId>
+            <version>${jersey.version}</version>
         </dependency>
 
     </dependencies>
