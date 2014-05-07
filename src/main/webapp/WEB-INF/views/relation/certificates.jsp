@@ -9,7 +9,7 @@
 <%@ include file="../layout.jsp" %>
 
 <h1>Certificates</h1>
-<h3>Lists the content of relation certificates from the database.</h3>
+<h3>Lists the content of certificates relation from the database.</h3>
 <c:if test="${not empty certificates}">
     <table border="1">
         <tr>

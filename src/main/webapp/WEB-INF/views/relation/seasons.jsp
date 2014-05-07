@@ -9,15 +9,15 @@
 <%@ include file="../layout.jsp" %>
 
 <h1>Seasons</h1>
-
+<h3>Lists the content of the seasons relation form the database.</h3>
 <c:if test="${not empty seasons}">
-    <table>
+    <table border="1">
         <tr>
             <th>Title</th>
             <th>Number</th>
         </tr>
         <c:forEach var="season" items="${seasons}">
-            <tr>
+            <tr align="center">
                 <td>${season.title}</td>
                 <td>${season.number}</td>
             </tr>
