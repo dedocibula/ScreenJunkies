@@ -7,8 +7,8 @@ html, body { /* Will style the "body" tag in html file */
     margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;
     padding: 0;
 }
- 
- header { /* Will style the "header" tag in html file */
+
+header { /* Will style the "header" tag in html file */
     height:8%;
     width:100%; /* Takes 100% width of wrapper's width (the parent) */
     background-color:#181818;
@@ -23,17 +23,29 @@ nav { /* Will style the "nav" tag in html file */
                     want to pre-set the height dimension of any tag. */
     font-size:125%;
     padding-left: 3%;
+    text-align: left;
 }
- 
-#content { /* "id" selector for the content tag. The styles in this tag will refer to whatever tag in the html code has the id of "content." */
-    width:70%; /* Takes up 70% width of wrapper's width (the parent). Notice how with the navigation's width, 30% + 70% = 100%. If we used width > 70%, the content section wouldn't fit */
+
+#nav { /* Will style the "nav" tag in html file */
+    width:20%; /* Takes 30% width of wrapper's width (the parent) */
     background-color:white;
-    float:right; /* Positions content right next to the navigation section instead of under it.
+    float:right; /* Positions navigation to left and allows for other tags to positioned next to it rather than below it*/
+    height:400px; /* Fixed height at 400px for demonstration. You normally wouldn't
+                    want to pre-set the height dimension of any tag. */
+    font-size:125%;
+    padding-right: 5%;
+    text-align:right;
+}
+
+#content { /* "id" selector for the content tag. The styles in this tag will refer to whatever tag in the html code has the id of "content." */
+    width:50%; /* Takes up 70% width of wrapper's width (the parent). Notice how with the navigation's width, 30% + 70% = 100%. If we used width > 70%, the content section wouldn't fit */
+    background-color:white;
+    float:left; /* Positions content right next to the navigation section instead of under it.
                     Floating to the right works just the same way, in this case */
     height: 100%; /* Fixed height at 400px for demonstration. You normally wouldn't
                     want to pre-set the height dimension of any tag. */
 }
- 
+
 footer { /* Will style the "footer" tag in html file */
     clear:both; /* Makes absolute sure to position footer under BOTH the content and navigation bars.
                 This is known as "clearing a float", and only works when an tag(s) above is using the "float" property. */
@@ -42,7 +54,7 @@ footer { /* Will style the "footer" tag in html file */
 }
 
 .menu ul {
-    list-style:none; 
+    list-style:none;
     font-family:Verdana, Helvetica, arial, sans-serif; font-size:25px;
 }
 

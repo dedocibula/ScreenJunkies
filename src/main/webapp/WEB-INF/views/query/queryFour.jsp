@@ -8,15 +8,16 @@
 
 <%@ include file="../layout.jsp" %>
 
-<h1>Query Four</h1>
-<h3>Lists the most common rate score</h3>
+<h1 style="text-align:center;">Query Four</h1>
+<h3 style="text-align:center;">Lists the most common rate score.</h3>
 <c:if test="${not empty rateScore}">
-    <table border="1">
+<div id="content">
+    <table border="1" style="margin:auto;">
         <c:set var="first" value="${rateScore[0]}" />
 
         <tr>
-        	<th>Rate Score</th>
-    	</tr>
+            <th>Rate Score</th>
+        </tr>
 
         <c:forEach var="row" items="${rateScore}">
             <tr>
@@ -28,7 +29,7 @@
             </tr>
         </c:forEach>
     </table>
-</c:if>
+    </c:if>
 
 </body>
 </html>

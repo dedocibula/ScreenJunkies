@@ -8,10 +8,11 @@
 
 <%@ include file="../layout.jsp" %>
 
-<h1>Directors</h1>
-<h3>Lists the content of the directors relation form the database.</h3>
+<h1 style="text-align:center;">Directors</h1>
 <c:if test="${not empty directors}">
-    <table border="1">
+
+<div id="content">
+    <table border="1" style="margin:auto;">
         <tr>
             <th>Id</th>
             <th>First Name</th>
@@ -27,7 +28,7 @@
             </tr>
         </c:forEach>
     </table>
-</c:if>
+    </c:if>
 
 </body>
 </html>

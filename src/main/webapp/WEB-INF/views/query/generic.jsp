@@ -8,10 +8,11 @@
 
 <%@ include file="../layout.jsp" %>
 
-<h1>Generic SQL Query</h1>
+<h1 style="text-align:center;">Generic SQL Query</h1>
 
 <c:if test="${not empty result}">
-    <table>
+<div id="content">
+    <table border="1" style="margin:auto;">
         <c:set var="first" value="${result[0]}" />
 
         <c:forEach var="element" items="${first}">
@@ -21,7 +22,7 @@
         <c:forEach var="row" items="${result}">
             <tr>
                 <c:forEach var="element" items="${row}">
-                    <td>
+                    <td align="center">
                         <div>${element.value}</div>
                     </td>
                 </c:forEach>
@@ -29,6 +30,6 @@
         </c:forEach>
     </table>
 </c:if>
-
+</div>
 </body>
 </html>

@@ -8,10 +8,10 @@
 
 <%@ include file="../layout.jsp" %>
 
-<h1>Certificates</h1>
-<h3>Lists the content of certificates relation from the database.</h3>
+<h1 style="text-align:center;">Certificates</h1>
 <c:if test="${not empty certificates}">
-    <table border="1">
+<div id="content">
+    <table border="1" style="margin:auto;">
         <tr>
             <th>Name</th>
             <th>Content</th>
@@ -23,7 +23,7 @@
             </tr>
         </c:forEach>
     </table>
-</c:if>
+    </c:if>
 
 </body>
 </html>

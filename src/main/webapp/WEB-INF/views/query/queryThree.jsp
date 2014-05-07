@@ -8,16 +8,17 @@
 
 <%@ include file="../layout.jsp" %>
 
-<h1>Query Three</h1>
-<h3>Lists the user who has the most friends.</h3>
+<h1 style="text-align:center;">Query Three</h1>
+<h3 style="text-align:center;">Lists the user who has the most friends.</h3>
 <c:if test="${not empty user}">
-    <table border="1">
+<div id="content">
+    <table border="1" style="margin:auto;">
         <c:set var="first" value="${user[0]}" />
 
         <tr>
-        	<th>User ID</th>
-        	<th>Number of Friends</th>
-    	</tr>
+            <th>User ID</th>
+            <th>Number of Friends</th>
+        </tr>
 
         <c:forEach var="row" items="${user}">
             <tr>
@@ -29,7 +30,7 @@
             </tr>
         </c:forEach>
     </table>
-</c:if>
+    </c:if>
 
 </body>
 </html>

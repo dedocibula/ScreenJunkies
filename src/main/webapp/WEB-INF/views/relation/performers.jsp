@@ -8,10 +8,11 @@
 
 <%@ include file="../layout.jsp" %>
 
-<h1>Performers</h1>
-<h3>Lists the content of the performers relation form the database.</h3>
+<h1 style="text-align:center;">Performers</h1>
 <c:if test="${not empty performers}">
-    <table border="1">
+
+<div id="content">
+    <table border="1" style="margin:auto;">
         <tr>
             <th>Id</th>
             <th>First Name</th>
@@ -29,7 +30,7 @@
             </tr>
         </c:forEach>
     </table>
-</c:if>
+    </c:if>
 
 </body>
 </html>

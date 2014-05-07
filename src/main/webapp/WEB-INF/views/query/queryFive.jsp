@@ -8,15 +8,17 @@
 
 <%@ include file="../layout.jsp" %>
 
-<h1>Query Five</h1>
-<h3>Lists the age of the oldest user.</h3>
+<h1 style="text-align:center;">Query Five</h1>
+<h3 style="text-align:center;">Lists the age of the oldest user.</h3>
+
 <c:if test="${not empty oldestUser}">
-    <table border="1">
+<div id="content">
+    <table border="1" style="margin:auto;">
         <c:set var="first" value="${oldestUser[0]}" />
 
         <tr>
-        	<th>Oldest User's Age</th>
-    	</tr>
+            <th>Oldest User's Age</th>
+        </tr>
 
         <c:forEach var="row" items="${oldestUser}">
             <tr>
@@ -28,7 +30,7 @@
             </tr>
         </c:forEach>
     </table>
-</c:if>
-
+    </c:if>
+</div>
 </body>
 </html>
