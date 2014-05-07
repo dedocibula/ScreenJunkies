@@ -9,15 +9,15 @@
 <%@ include file="../layout.jsp" %>
 
 <h1>Certificates</h1>
-
+<h3>Lists the content of relation certificates from the database.</h3>
 <c:if test="${not empty certificates}">
-    <table>
+    <table border="1">
         <tr>
             <th>Name</th>
             <th>Content</th>
         </tr>
         <c:forEach var="certificate" items="${certificates}">
-            <tr>
+            <tr align="center">
                 <td>${certificate.name}</td>
                 <td>${certificate.content}</td>
             </tr>

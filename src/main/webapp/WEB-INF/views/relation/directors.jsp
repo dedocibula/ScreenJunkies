@@ -9,9 +9,9 @@
 <%@ include file="../layout.jsp" %>
 
 <h1>Directors</h1>
-
+<h3>Lists the content of the directors relation form the database.</h3>
 <c:if test="${not empty directors}">
-    <table>
+    <table border="1">
         <tr>
             <th>Id</th>
             <th>First Name</th>
@@ -19,7 +19,7 @@
             <th>Age</th>
         </tr>
         <c:forEach var="director" items="${directors}">
-            <tr>
+            <tr align="center">
                 <td>${director.id}</td>
                 <td>${director.firstName}</td>
                 <td>${director.lastName}</td>

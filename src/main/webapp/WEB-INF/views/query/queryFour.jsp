@@ -9,19 +9,19 @@
 <%@ include file="../layout.jsp" %>
 
 <h1>Query Four</h1>
-
+<h3>Lists the most common rate score</h3>
 <c:if test="${not empty rateScore}">
-    <table>
+    <table border="1">
         <c:set var="first" value="${rateScore[0]}" />
 
-        <c:forEach var="element" items="${first}">
-            <th>${element.key}</th>
-        </c:forEach>
+        <tr>
+        	<th>Rate Score</th>
+    	</tr>
 
         <c:forEach var="row" items="${rateScore}">
             <tr>
                 <c:forEach var="element" items="${row}">
-                    <td>
+                    <td align="center">
                         <div>${element.value}</div>
                     </td>
                 </c:forEach>
