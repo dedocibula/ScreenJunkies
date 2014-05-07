@@ -9,9 +9,9 @@
 <%@ include file="../layout.jsp" %>
 
 <h1>Performers</h1>
-
+<h3>Lists the content of the performers relation form the database.</h3>
 <c:if test="${not empty performers}">
-    <table>
+    <table border="1">
         <tr>
             <th>Id</th>
             <th>First Name</th>
@@ -20,7 +20,7 @@
             <th>Gender</th>
         </tr>
         <c:forEach var="performer" items="${performers}">
-            <tr>
+            <tr align="center">
                 <td>${performer.id}</td>
                 <td>${performer.firstName}</td>
                 <td>${performer.lastName}</td>
